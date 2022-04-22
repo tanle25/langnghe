@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<META HTTP-EQUIV="Pragma" CONTENT="no-cache">-->
+    <link rel="canonical" href="https://www.nongsanantoanthanhhoa.vn"/>
+    <meta http-equiv='cache-control' content='no-cache'>
+
+    <!-- SEO -->
+    <meta name="description" content="Kết nối cung cầu nông sản, thực phẩm an toàn trên địa bàn tỉnh Thanh Hóa">
+    <meta name="title" content="Kết nối cung cầu nông sản, thực phẩm an toàn">
+    <meta name="keywords" content="thực phẩm sạch, thực phẩm an toàn, nông sản thanh hóa, an toàn thức phẩm, kết nối cung cầu,
+    attp, nông nghiệp sạch, thực phẩm hữu cơ, nongsanantoanthanhhoa, thực phẩm, thanh hóa, Kết nối cung cầu nông sản thực phẩm an toàn, nông sản an toàn," >
+    <!-- end SEO -->
+    <!-- tag share facebook -->
+    <meta property="og:description" content="Kết nối cung cầu nông sản, thực phẩm an toàn trên địa bàn tỉnh Thanh Hóa">
+    <meta property="og:title" content="Trang chủ">
+    <meta property="og:image" content="https://www.nongsanantoanthanhhoa.vn/css/images/img1_07.jpg">
+    <meta property="og:site_name" content="Kết nối cung cầu nông sản, thực phẩm an toàn">
+    <meta property="og:url" content="https://www.nongsanantoanthanhhoa.vn" />
+    <meta property="og:type" content="article" />
+    <!-- end tag facebook -->
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="tLNZ0yCEBD5qnpVONXSZ4gXrHpi9HMRHLnkUHyTD">
+    <title>Trang chủ
+    - Kết nối cung cầu nông sản an toàn Thanh Hoá</title>
+        <!-- <title>Trang chủ
+        - Kết nối cung cầu nông sản, thực phẩm an toàn</title> -->
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="96x96" href="https://www.nongsanantoanthanhhoa.vn/favicon-96x96.png">
+        <link rel="manifest" href="https://www.nongsanantoanthanhhoa.vn/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://www.nongsanantoanthanhhoa.vn/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Select2 -->
+        <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/slick-theme.css" rel="stylesheet">
+        <link href="css/nhomsp.css" rel="stylesheet">
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/owl.theme.default.min.css" rel="stylesheet">
+        <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+        <link href="css/ketnoi.css" rel="stylesheet">
+        <link href="css/style-shop.css" rel="stylesheet">
+        <!-- Stack styles : Push style here -->
+    </head>
+<body>
+<header>
+    <!-- Đăt chung để gọi hàm script logout cho nhiều vị trí -->
+    <div class="top-header container-fluil none-mobile">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-left">
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="li-tg"><a href="https://www.nongsanantoanthanhhoa.vn/tro-giup">Trợ giúp</a></li>
+
+                <li class="li-dn">
+                    <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/register">Đăng ký</a>
+                </li>
+                <li class="li-dk">
+                    <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/login">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner container-fluil">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="file:///D:/nongsan/index.html"><img src="images/logo.png" alt="Kết nối cung cầu nông sản, thực phẩm an toàn"></a>
+                    </div>
+                </div>
+                <div class="col-md-8 wrap-search">
+                    <div id="search" class="search-form">
+                        <input class="input-search" type="text" value="" id="text-search" name="search" placeholder="Tìm kiếm thông tin trên trang" />
+                        <div class="pac-card" id="pac-card">
+                            <div id="pac-container">
+                                <input type="hidden" id="lat" value="0" name="lat" />
+                                <input type="hidden" id="lng" value="0" name="lng" />
+                                <input class="input-vitri" id="pac-input" type="text" placeholder="Nhập vào vị trí của bạn" />
+                                <div class="loca-img" id="get-location" title="Bấm vào đây để lấy tọa độ vị trí hiện tại của bạn!" class="check-location-desk click">
+                                    <img src="images/location.png" alt="Bấm vào đây để lấy tọa độ vị trí hiện tại của bạn!">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="iconSearchHeader" onclick="search();"><i class="fa fa-search"></i></button>
+                        <div id="mapId"></div>
+                    </div>
+                </div>
+                <div class="col-md-1 wrap-search">
+                    <div class="card-wrapper">
+                        <a class="btn-post-cart" href="https://www.nongsanantoanthanhhoa.vn/get-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-count"> </span>
+                        </a>
+                        <div class="cart-web-hover">
+                            <div class="cart-sp">
+                                <div >
+                                    <div class="cart-content-title v-center">Sản phẩm mới thêm</div>
+                                    <div class="product-items-cart">
+
+                                    </div>
+                                    <div class="cart-web-item-footer">
+                                        <div class="navbar__spacer"></div>
+                                        <button   class="btn btn-solid-primary btn--s btn--inline">Xem Giỏ hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluil">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="block-mobile regis">
+
+                        <li class="li-tg"><a href="https://www.nongsanantoanthanhhoa.vn/tro-giup">Trợ giúp</a></li>
+
+                        <li class="li-dn">
+                            <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/register">Đăng ký</a>
+                        </li>
+                        <li class="li-dk">
+                            <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/login">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse container menu-hor">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown dmsp">
+                            <a class="dropdown-toggle toggle-button-dmsp" class="navbar-toggle" data-toggle="collapse"><i class="fa fa-list"></i>DANH MỤC SẢN PHẨM</a>
+                            <ul class="dropdown-menu menu-vertical-dmsp">
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/rau-cu-qua">
+                                        Rau, củ, quả
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu0" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/rau-cu-qua-tuoi">
+                                                Rau, củ, quả tươi
+                                            </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/hoa-qua-tuoi">
+                                            Hoa quả tươi
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-gia-suc-gia-cam">
+                                        Thịt gia súc, gia cầm
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu1" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-lon">
+                                                Thịt lợn
+                                            </a>
+                                        </li>
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-bo">
+                                                Thịt bò
+                                            </a>
+                                        </li>
+                                        <li >
+                                         <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-ga-vit">
+                                            Thịt gà, vịt
+                                        </a>
+                                        </li>
+                                        <li >
+                                         <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/trung-gia-cam">
+                                            Trứng gà, vịt, chim
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ngu-coc-gia-vi">
+                                        Ngũ cốc, gia vị
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu2" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/luong-thuc">
+                                                Lương thực
+                                            </a>
+                                        </li>
+                                        <li >
+                                         <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ngu-coc-so-che">
+                                            Ngũ cốc sơ chế
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/muoi-duong">
+                                            Muối, đường
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/cacao-dieu-ho-tieu">
+                                            Cacao, điều, hồ tiêu
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/nuoc-mam">
+                                            Nước mắm
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/do-uong-duoc-lieu">
+                                        Đồ uống, dược liệu
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu3" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/nuoc-giai-khat">
+                                            Nước giải khát
+                                            </a>
+                                            </li>
+                                            <li >
+                                             <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/sua-va-cac-sp-tu-sua">
+                                                Sữa và các SP từ sữa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/san-pham-dong-goi">
+                                        Sản phẩm đóng gói
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu4" class="dropdown-menu">
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/banh-keo">
+                                            Banh, kẹo
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thuy-hai-san">
+                                        Thủy, hải sản
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu5" class="dropdown-menu">
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/tom-cua-oc">
+                                            Tôm, cua, ốc
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ca-ao-ho">
+                                            Cá ao hồ
+                                            </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ca-bien">
+                                            Cá biển
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/cac-san-pham-khac">
+                                    Các sản phẩm khác
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--<ul class="dropdown-menu" data-widget="tree">-->
+                        <li >
+                            <a  href="https://www.nongsanantoanthanhhoa.vn/#">
+                                <i class='fa '></i><span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a  href="https://www.nongsanantoanthanhhoa.vn/ket-noi">
+                                <i class='fa '></i><span>Kết nối cung cầu</span>
+                            </a>
+                        </li>
+                        <li  class="dropdown menu-sub-hor" >
+                            <a  class="dropdown-toggle"   href="file:///D:/nongsan/shop.html">
+                                <i class='fa '></i><span>Nguồn cung cấp</span>
+                            </a>
+                            <i class="fa fa-angle-down subDropdown" ></i>
+                            <ul class="dropdown-menu">
+                                <li >
+                                    <a  href="file:///D:/nongsan/shop.html">
+                                        <i class='fa '></i><span>Cơ sở SX, KD</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="file:///D:/nongsan/vung-san-xuat.html">
+                                        <i class='fa '></i><span>Vùng sản xuất</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/dia-diem-kinh-doanh">
+                                        <i class='fa '></i><span>Địa điểm kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/map">
+                                        <i class='fa '></i><span>Bản đồ phân bố cơ sở</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  class="dropdown menu-sub-hor" >
+                            <a  class="dropdown-toggle"   href="https://www.nongsanantoanthanhhoa.vn/#">
+                                <i class='fa '></i><span>Thông tin hữu ích</span>
+                            </a>
+                            <i class="fa fa-angle-down subDropdown" ></i>
+                            <ul class="dropdown-menu">
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-tin-tuc">
+                                        <i class='fa '></i><span>Tin ATTP</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/van-ban-qppl">
+                                        <i class='fa '></i><span>Văn bản về ATTP</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/video">
+                                        <i class='fa '></i><span>Thư viện video</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/thu-vien-anh">
+                                        <i class='fa '></i><span>Thư viện ảnh</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li >
+                            <a  href="https://www.nongsanantoanthanhhoa.vn/lien-he">
+                                <i class='fa '></i><span>Liên hệ, phản hồi</span>
+                            </a>
+                        </li>
+    <!--</ul>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<content>
+    <div class="block-videos">
+        <div class="wrap-page">
+            <div class="hrm-wrap-breadcrumb">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="" title="Trang chủ">Trang chủ</a></li>
+                        <li><a href="">Thư viện Video</a></li>
+                    </ul>
+                </div>
+            </div> <!-- end pagination -->
+            <div class="content-videos">
+                <div class="container">
+                    <div class="block-videos-title">
+                        <h1>Danh sách video</h1>
+                    </div>
+                    <div class="block-videos-content row is-flex">
+                        <div class="item-video-list col-md-3 col-sm-4 col-xs-6">
+                            <div class="img-news-hot">
+                                <a href="../nongsan/single-videos.html">
+                                    <div class="../nongsan/single-videos.html">
+                                        <img src="images/0.jpg">
+                                        <div class="icon-play">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title-video-right">
+                                <h3><a href="../nongsan/single-videos.html"> Thanh Hóa - Nói không với thực phẩm bẩn </a></h3> 
+                                <p class="time-hot">
+                                    <span><i class="fa fa-clock-o"></i> 28/08/2019</span>
+                                </p> 
+                            </div> 
+                        </div> <!-- end col -->
+                        <div class="item-video-list col-md-3 col-sm-4 col-xs-6">
+                            <div class="img-news-hot">
+                                <a href="../nongsan/single-videos.html">
+                                    <div class="">
+                                        <img src="images/0.jpg">
+                                        <div class="icon-play">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title-video-right">
+                                <h3><a href="../nongsan/single-videos.html"> Thanh Hóa - Nói không với thực phẩm bẩn </a></h3> 
+                                <p class="time-hot">
+                                    <span><i class="fa fa-clock-o"></i> 28/08/2019</span>
+                                </p> 
+                            </div> 
+                        </div> <!-- end col -->
+                        <div class="item-video-list col-md-3 col-sm-4 col-xs-6">
+                            <div class="img-news-hot">
+                                <a href="../nongsan/single-videos.html">
+                                    <div class="">
+                                        <img src="images/0.jpg">
+                                        <div class="icon-play">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title-video-right">
+                                <h3><a href=""> Thanh Hóa - Nói không với thực phẩm bẩn </a></h3> 
+                                <p class="time-hot">
+                                    <span><i class="fa fa-clock-o"></i> 28/08/2019</span>
+                                </p> 
+                            </div> 
+                        </div> <!-- end col -->
+                        <div class="item-video-list col-md-3 col-sm-4 col-xs-6">
+                            <div class="img-news-hot">
+                                <a href="">
+                                    <div class="">
+                                        <img src="images/0.jpg">
+                                        <div class="icon-play">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title-video-right">
+                                <h3><a href=""> Thanh Hóa - Nói không với thực phẩm bẩn </a></h3> 
+                                <p class="time-hot">
+                                    <span><i class="fa fa-clock-o"></i> 28/08/2019</span>
+                                </p> 
+                            </div> 
+                        </div> <!-- end col -->
+                        <div class="item-video-list col-md-3 col-sm-4 col-xs-6">
+                            <div class="img-news-hot">
+                                <a href="">
+                                    <div class="">
+                                        <img src="images/0.jpg">
+                                        <div class="icon-play">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title-video-right">
+                                <h3><a href=""> Thanh Hóa - Nói không với thực phẩm bẩn </a></h3> 
+                                <p class="time-hot">
+                                    <span><i class="fa fa-clock-o"></i> 28/08/2019</span>
+                                </p> 
+                            </div> 
+                        </div> <!-- end col -->
+                    </div> <!-- end blog videos -->
+                    <div class="pull-right pagination pagination-pt">
+                        <ul class="pagination">
+                            <li class="disabled">
+                                <span>Trước</span>
+                            </li>
+                            <li class="active">
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <a href="">2</a>
+                            </li>
+                            <li>
+                                <a href=""> <span>Tiếp</span> </a>
+                            </li>
+                        </ul>
+                    </div> <!-- end pagination -->
+                </div>
+            </div>
+        </div>
+    </div>
+</content> <!-- end content -->
+
+<footer>
+    <div class="ft-before">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ft-dl-mobile">
+                    <div class="about-footer">
+                        <div class="footer-logo widget" >
+                            <h3 class="widget-title" >TẢI ỨNG DỤNG DI ĐỘNG </h3>
+                            <span class="img-dl"><img  src="https://www.nongsanantoanthanhhoa.vn/css/images/qrcode-app.png" class="attachment-full size-full" alt="Tải ứng dụng di động phần mềm kết nối cung cầu"></span>
+                            <div class="img-right">
+                                <div class="img-gg">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ketnoicungcau&amp;hl=vi" target="_blank">
+                                        <img width="100" height="20" src="https://www.nongsanantoanthanhhoa.vn/css/images/adr.png" class="attachment-full size-full" alt="Tải ứng dụng trên Google Play"> 
+                                    </a>
+                                </div>
+
+                                <div class="img-ip">
+                                    <a href="https://itunes.apple.com/vn/app//id1454619497?l=vi&amp;mt=8" target="_blank">
+                                        <img width="80" height="20" src="https://www.nongsanantoanthanhhoa.vn/css/images/ios.png" class="attachment-full size-full" alt="Tải ứng dụng trên App Store"> 
+                                    </a>
+                                </div>
+                            </div>    
+                        </div>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnongsanantoanthanhhoa.vn&tabs=272&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="154" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row" >
+                        <div class="col-md-4 col-xs-6 widget">
+                            <h3 class="widget-title">THÔNG TIN</h3>
+                            <ul class="widget-menu">
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/gioi-thieu">Giới thiệu</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/document/quy-che-su-dung-phan-mem.pdf" target="_blank">Quy chế hoạt động</a></li><!-- about/quy-che-hoat-dong -->
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/dieu-khoan-tham-gia">Điều khoản tham gia</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/privacy-policy">Chính sách bảo mật</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/document/tai-lieu-hdsd-nguoi-dung.pdf" target="_blank">Hướng dẫn sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-xs-6  widget">
+                            <h3 class="widget-title">CƠ QUAN QUẢN LÝ</h3>
+                            <ul class="widget-menu">
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/ubnd-tinh-thanh-hoa">UBND tỉnh Thanh Hóa</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/cac-so-ban-nganh">Sở, ban, ngành</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/ubnd-huyen-thi-tp">UBND huyện, thị, thành phố</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/ubnd-xa-phuong">UBND xã, phường, thị trấn</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/lien-he">Thông tin liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-xs-6  widget">
+                            <h3 class="widget-title">THAM GIA CÙNG CHÚNG TÔI</h3>
+                            <ul class="widget-menu">
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/co-so-sxkd">Cơ sở sản xuất, kinh doanh </a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/nguoi-tieu-dung">Người tiêu dùng </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="end-ft">
+    <span>© 2019 Kết nối cung cầu nông sản an toàn Thanh Hóa.</span>| <span class="hotline-ft">02373961818</span>|<span class="email-ft">vpdpattp@thanhhoa.gov.vn</span>
+</div>
+</footer>
+<div id="fb-root"></div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/customizer.js"></script>
+<!-- Stack script : Push scrip here -->
+</body>
+</html>

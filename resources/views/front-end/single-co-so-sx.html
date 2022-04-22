@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<META HTTP-EQUIV="Pragma" CONTENT="no-cache">-->
+    <link rel="canonical" href="https://www.nongsanantoanthanhhoa.vn"/>
+    <meta http-equiv='cache-control' content='no-cache'>
+
+    <!-- SEO -->
+    <meta name="description" content="Kết nối cung cầu nông sản, thực phẩm an toàn trên địa bàn tỉnh Thanh Hóa">
+    <meta name="title" content="Kết nối cung cầu nông sản, thực phẩm an toàn">
+    <meta name="keywords" content="thực phẩm sạch, thực phẩm an toàn, nông sản thanh hóa, an toàn thức phẩm, kết nối cung cầu,
+    attp, nông nghiệp sạch, thực phẩm hữu cơ, nongsanantoanthanhhoa, thực phẩm, thanh hóa, Kết nối cung cầu nông sản thực phẩm an toàn, nông sản an toàn," >
+    <!-- end SEO -->
+    <!-- tag share facebook -->
+    <meta property="og:description" content="Kết nối cung cầu nông sản, thực phẩm an toàn trên địa bàn tỉnh Thanh Hóa">
+    <meta property="og:title" content="Trang chủ">
+    <meta property="og:image" content="https://www.nongsanantoanthanhhoa.vn/css/images/img1_07.jpg">
+    <meta property="og:site_name" content="Kết nối cung cầu nông sản, thực phẩm an toàn">
+    <meta property="og:url" content="https://www.nongsanantoanthanhhoa.vn" />
+    <meta property="og:type" content="article" />
+    <!-- end tag facebook -->
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="tLNZ0yCEBD5qnpVONXSZ4gXrHpi9HMRHLnkUHyTD">
+    <title>Trang chủ
+    - Kết nối cung cầu nông sản an toàn Thanh Hoá</title>
+        <!-- <title>Trang chủ
+        - Kết nối cung cầu nông sản, thực phẩm an toàn</title> -->
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="96x96" href="https://www.nongsanantoanthanhhoa.vn/favicon-96x96.png">
+        <link rel="manifest" href="https://www.nongsanantoanthanhhoa.vn/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://www.nongsanantoanthanhhoa.vn/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Select2 -->
+        <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/slick-theme.css" rel="stylesheet">
+        <link href="css/nhomsp.css" rel="stylesheet">
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/owl.theme.default.min.css" rel="stylesheet">
+        <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+        <link href="css/ketnoi.css" rel="stylesheet">
+        <link href="css/style-shop.css" rel="stylesheet">
+        <!-- Stack styles : Push style here -->
+    </head>
+<body>
+<header>
+    <!-- Đăt chung để gọi hàm script logout cho nhiều vị trí -->
+    <div class="top-header container-fluil none-mobile">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-left">
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="li-tg"><a href="https://www.nongsanantoanthanhhoa.vn/tro-giup">Trợ giúp</a></li>
+
+                <li class="li-dn">
+                    <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/register">Đăng ký</a>
+                </li>
+                <li class="li-dk">
+                    <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/login">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner container-fluil">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="file:///D:/nongsan/index.html"><img src="images/logo.png" alt="Kết nối cung cầu nông sản, thực phẩm an toàn"></a>
+                    </div>
+                </div>
+                <div class="col-md-8 wrap-search">
+                    <div id="search" class="search-form">
+                        <input class="input-search" type="text" value="" id="text-search" name="search" placeholder="Tìm kiếm thông tin trên trang" />
+                        <div class="pac-card" id="pac-card">
+                            <div id="pac-container">
+                                <input type="hidden" id="lat" value="0" name="lat" />
+                                <input type="hidden" id="lng" value="0" name="lng" />
+                                <input class="input-vitri" id="pac-input" type="text" placeholder="Nhập vào vị trí của bạn" />
+                                <div class="loca-img" id="get-location" title="Bấm vào đây để lấy tọa độ vị trí hiện tại của bạn!" class="check-location-desk click">
+                                    <img src="images/location.png" alt="Bấm vào đây để lấy tọa độ vị trí hiện tại của bạn!">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="iconSearchHeader" onclick="search();"><i class="fa fa-search"></i></button>
+                        <div id="mapId"></div>
+                    </div>
+                </div>
+                <div class="col-md-1 wrap-search">
+                    <div class="card-wrapper">
+                        <a class="btn-post-cart" href="https://www.nongsanantoanthanhhoa.vn/get-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-count"> </span>
+                        </a>
+                        <div class="cart-web-hover">
+                            <div class="cart-sp">
+                                <div >
+                                    <div class="cart-content-title v-center">Sản phẩm mới thêm</div>
+                                    <div class="product-items-cart">
+
+                                    </div>
+                                    <div class="cart-web-item-footer">
+                                        <div class="navbar__spacer"></div>
+                                        <button   class="btn btn-solid-primary btn--s btn--inline">Xem Giỏ hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluil">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="block-mobile regis">
+
+                        <li class="li-tg"><a href="https://www.nongsanantoanthanhhoa.vn/tro-giup">Trợ giúp</a></li>
+
+                        <li class="li-dn">
+                            <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/register">Đăng ký</a>
+                        </li>
+                        <li class="li-dk">
+                            <a class="nav-link" href="https://www.nongsanantoanthanhhoa.vn/login">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse container menu-hor">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown dmsp">
+                            <a class="dropdown-toggle toggle-button-dmsp" class="navbar-toggle" data-toggle="collapse"><i class="fa fa-list"></i>DANH MỤC SẢN PHẨM</a>
+                            <ul class="dropdown-menu menu-vertical-dmsp">
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/rau-cu-qua">
+                                        Rau, củ, quả
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu0" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/rau-cu-qua-tuoi">
+                                                Rau, củ, quả tươi
+                                            </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/hoa-qua-tuoi">
+                                            Hoa quả tươi
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-gia-suc-gia-cam">
+                                        Thịt gia súc, gia cầm
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu1" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-lon">
+                                                Thịt lợn
+                                            </a>
+                                        </li>
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-bo">
+                                                Thịt bò
+                                            </a>
+                                        </li>
+                                        <li >
+                                         <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thit-ga-vit">
+                                            Thịt gà, vịt
+                                        </a>
+                                        </li>
+                                        <li >
+                                         <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/trung-gia-cam">
+                                            Trứng gà, vịt, chim
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ngu-coc-gia-vi">
+                                        Ngũ cốc, gia vị
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu2" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/luong-thuc">
+                                                Lương thực
+                                            </a>
+                                        </li>
+                                        <li >
+                                         <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ngu-coc-so-che">
+                                            Ngũ cốc sơ chế
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/muoi-duong">
+                                            Muối, đường
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/cacao-dieu-ho-tieu">
+                                            Cacao, điều, hồ tiêu
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/nuoc-mam">
+                                            Nước mắm
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/do-uong-duoc-lieu">
+                                        Đồ uống, dược liệu
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu3" class="dropdown-menu">
+                                        <li >
+                                            <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/nuoc-giai-khat">
+                                            Nước giải khát
+                                            </a>
+                                            </li>
+                                            <li >
+                                             <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/sua-va-cac-sp-tu-sua">
+                                                Sữa và các SP từ sữa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/san-pham-dong-goi">
+                                        Sản phẩm đóng gói
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu4" class="dropdown-menu">
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/banh-keo">
+                                            Banh, kẹo
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li  class="dropdown dropdown-submenu" >
+                                    <a  class="dropdown-toggle"  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/thuy-hai-san">
+                                        Thủy, hải sản
+                                    </a>
+                                    <i class="fa fa-angle-right pull-right subDropdown"></i>
+                                    <ul id="menu5" class="dropdown-menu">
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/tom-cua-oc">
+                                            Tôm, cua, ốc
+                                        </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ca-ao-ho">
+                                            Cá ao hồ
+                                            </a>
+                                        </li>
+                                        <li >
+                                           <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/ca-bien">
+                                            Cá biển
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-san-pham/cac-san-pham-khac">
+                                    Các sản phẩm khác
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--<ul class="dropdown-menu" data-widget="tree">-->
+                        <li >
+                            <a  href="https://www.nongsanantoanthanhhoa.vn/#">
+                                <i class='fa '></i><span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a  href="https://www.nongsanantoanthanhhoa.vn/ket-noi">
+                                <i class='fa '></i><span>Kết nối cung cầu</span>
+                            </a>
+                        </li>
+                        <li  class="dropdown menu-sub-hor" >
+                            <a  class="dropdown-toggle"   href="file:///D:/nongsan/shop.html">
+                                <i class='fa '></i><span>Nguồn cung cấp</span>
+                            </a>
+                            <i class="fa fa-angle-down subDropdown" ></i>
+                            <ul class="dropdown-menu">
+                                <li >
+                                    <a  href="file:///D:/nongsan/shop.html">
+                                        <i class='fa '></i><span>Cơ sở SX, KD</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="file:///D:/nongsan/vung-san-xuat.html">
+                                        <i class='fa '></i><span>Vùng sản xuất</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/dia-diem-kinh-doanh">
+                                        <i class='fa '></i><span>Địa điểm kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/map">
+                                        <i class='fa '></i><span>Bản đồ phân bố cơ sở</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  class="dropdown menu-sub-hor" >
+                            <a  class="dropdown-toggle"   href="https://www.nongsanantoanthanhhoa.vn/#">
+                                <i class='fa '></i><span>Thông tin hữu ích</span>
+                            </a>
+                            <i class="fa fa-angle-down subDropdown" ></i>
+                            <ul class="dropdown-menu">
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/danh-muc-tin-tuc">
+                                        <i class='fa '></i><span>Tin ATTP</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/van-ban-qppl">
+                                        <i class='fa '></i><span>Văn bản về ATTP</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/video">
+                                        <i class='fa '></i><span>Thư viện video</span>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a  href="https://www.nongsanantoanthanhhoa.vn/thu-vien-anh">
+                                        <i class='fa '></i><span>Thư viện ảnh</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li >
+                            <a  href="https://www.nongsanantoanthanhhoa.vn/lien-he">
+                                <i class='fa '></i><span>Liên hệ, phản hồi</span>
+                            </a>
+                        </li>
+    <!--</ul>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<content>
+    <div class="wrap-page">
+        <div class="block-title-h1">
+            <div class="container">
+                <h1>Cơ sở sản xuất kinh doanh</h1>
+            </div>
+        </div>
+        <div class="hrm-wrap-breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="">Cơ sở sản xuất kinh doanh</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="single-co-so-sx">
+            <div class="container">
+                <div class="content-center">
+                    <div class="row">
+                        <div class="col-md-3 hidden-sm hidden-xs">
+                            <div class="shop-page__info">
+                                <div class="woocommerce widget_product_categories">
+                                    <h2 class="widget-title-h2">Danh mục</h2>
+                                    <div id="cssmenu">
+                                        <ul>
+                                            <li><a id="all_products" href="" style="cursor: pointer; text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">Tất cả (297)</a></li>
+                                            <li><a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">Sản phẩm khuyến mại</a></li>
+                                            <li><a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">Sản phẩm mới</a></li>
+                                            <li><a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">Sản phẩm được mua nhiều</a></li>
+                                            <li><a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">Sản phẩm được xem nhiều</a></li>
+                                            <li class="has-sub">
+                                                <a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">
+                                                    Rau, củ, quả
+                                                    <span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span>
+                                                </a>
+                                                <i class="fa fa-plus fa-sub sub-dropmenu" aria-expanded="false"></i>
+                                                <ul>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Rau, củ, quả tươi
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Hoa quả tươi
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">
+                                                    Thịt gia súc, gia cầm
+                                                    <span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span>
+                                                </a>
+                                                <i class="fa fa-plus fa-sub sub-dropmenu" aria-expanded="false"></i>
+                                                <ul>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Thịt lợn
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Thịt bò
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Thịt gà, vịt
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Trứng gà, vịt, chim
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">
+                                                    Ngũ cốc, gia vị
+                                                    <span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span>
+                                                </a>
+                                                <i class="fa fa-plus fa-sub sub-dropmenu" aria-expanded="false"></i>
+                                                <ul>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Lương thực
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Ngũ cốc sơ chế
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Muối, đường
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Cacao, điều, hồ tiêu
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Nước mắm
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">
+                                                    Đồ uống, dược liệu
+                                                    <span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span>
+                                                </a>
+                                                <i class="fa fa-plus fa-sub sub-dropmenu" aria-expanded="false"></i>
+                                                <ul>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Nước giải khát
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Sữa và các SP từ sữa
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">
+                                                    Sản phẩm đóng gói
+                                                    <span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span>
+                                                </a>
+                                                <i class="fa fa-plus fa-sub sub-dropmenu" aria-expanded="false"></i>
+                                                <ul>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Banh, kẹo
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">
+                                                    Thủy, hải sản
+                                                    <span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span>
+                                                </a>
+                                                <i class="fa fa-plus fa-sub sub-dropmenu" aria-expanded="false"></i>
+                                                <ul>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Tôm, cua, ốc
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Cá ao hồ
+                                                        </a>
+                                                    </li>
+                                                    <li class="has-sub">
+                                                        <a href="">
+                                                            Cá biển
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-sub">
+                                                <a href="" style="text-shadow: rgba(255, 255, 255, 0.35) 0px 1px 0px;">
+                                                    Các sản phẩm khác
+                                                    <span class="holder" style="border-color: rgba(255, 255, 255, 0.35);"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div> <!-- end col -->
+                        <div class="col-md-9 col-sm-12 col-xs-12">
+                            <div class="shop-page-wrapper">
+                                <div class="shop-page__info">
+                                    <h1>Công ty Cổ phần TM & XNK thực phẩm Sao Mai <i class="fa fa-check-circle" title="Đã kiểm duyệt"></i></h1>
+                                    <div class="row section-seller-overview-horizontal">
+                                        <div class="col-md-5">
+                                            <div class="section-seller-overview-horizontal__leading">
+                                                <div class="section-seller-overview-horizontal__leading-background" style="background-image: url(https://www.nongsanantoanthanhhoa.vn/css/images/bg-page.jpg);">
+                                                </div>
+                                                <div class="section-seller-overview-horizontal__leading-background-mask"></div>
+                                                <div class="section-seller-overview-horizontal__leading-content">
+                                                    <div class="section-seller-overview-horizontal__seller-portrait">
+                                                        <a class="section-seller-overview-horizontal__seller-portrait-link" href="#">
+                                                            <div class="avatar-tp">
+                                                                <div class="avatar__placeholder"></div>
+                                                                <img class="avatar__img" src="https://www.nongsanantoanthanhhoa.vn/image/200/200/u2HFPeSzJySYug14REo7UDXgAvaw4YxMfQnLbjB6.png">
+                                                            </div>
+                                                        </a>
+                                                        <div class="section-seller-overview-horizontal__portrait-info">
+                                                            <div class="section-seller-overview-horizontal__portrait-status">
+                                                                <div class="section-seller-overview-horizontal__active-time">Đang hoạt động</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="section-seller-overview-horizontal__buttons">
+                                                        <div class="section-seller-overview-horizontal__button">
+                                                            <button class="button-outline button-outline--complement button-outline--fill button-add-follow-cssx" style="display: block;">theo dõi</button>
+                                                            <button class="button-remove-follow-cssx" style="display: none;">Đang Theo Dõi</button>
+                                                        </div>
+                                                        <div class="section-seller-overview-horizontal__button">
+                                                            <!--button class="button-outline button-outline--complement button-outline--fill button-outline-- "  onClick='openFormSendMessage()'>Gửi tin nhắn</button-->
+                                                            <a class="button-outline button-outline--complement button-outline--fill button-outline-- " href="https://www.nongsanantoanthanhhoa.vn/messenger/1395">Chat ngay</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cssx-product">
+                                                <div class="like-cssx">
+                                                    <span class="">
+                                                        <svg width="24" height="20" class="svg-like">
+                                                            <path d="M19.469 1.262c-5.284-1.53-7.47 4.142-7.47 4.142S9.815-.269 4.532 1.262C-1.937 3.138.44 13.832 12 19.333c11.559-5.501 13.938-16.195 7.469-18.07z" stroke="#FF424F" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linejoin="round" style="fill: none;"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span>Đã thích </span><span class="totalLike"> (15) </span>
+                                                </div>
+
+                                                <span>|</span>
+                                                <button class="button-report-cssx" data-toggle="modal" data-target="#modal-vipham"><i class="fa fa-flag-checkered"></i>&nbsp; Phản ánh vi phạm</button>
+                                            </div>
+                                        </div> <!-- end col -->
+                                        <div class="col-md-7">
+                                            <div class="section-seller-overview-horizontal__seller-info-list pdp-mod-review">
+                                                <div class="section-seller-overview__item mod-rating mod-rating-cssx">
+                                                    <div class="summary">
+                                                        <div class="score">
+                                                            <span>5</span> trên 5
+                                                        </div>
+                                                        <div class="average">
+                                                            <div class="container-star" style="width:166.25px;height:30px">
+                                                                <span style="cursor: default;">
+                                                                    <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                        <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: hidden;"></div>
+                                                                        <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                            <span class="fa fa-star fa-2x"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="count">
+                                                            <span>
+                                                                12 đánh giá
+                                                            </span>
+                                                            <span>|</span>
+                                                            <span>
+                                                                356 lượt xem
+                                                            </span>
+                                                        </div>
+                                                        <div class="count">
+                                                            <img class="img-certifications-shops" src="https://www.nongsanantoanthanhhoa.vn/image/50/50/xpVOPBXCenJjEIJbmsIZzykWTCpxGUsPFHXx5aax.png" data-toggle="tooltip" data-placement="bottom" data-original-title="<b>Hệ thống quản lý an toàn thực phẩm ISO 22000 </b><hr style='margin:5px;'> Hệ thống quản l&amp;yacute; an to&amp;agrave;n thực phẩm ISO 22000">
+                                                            <img class="img-certifications-shops" src="https://www.nongsanantoanthanhhoa.vn/image/50/50/yfxnZX9UxI7wEEts9vIZSksNlP7y2RLKQ17iLQIF.jpeg" data-toggle="tooltip" data-placement="bottom" data-original-title="<b>Giấy chứng nhận cơ sở đủ điều kiện ATTP </b><hr style='margin:5px;'> Giấy chứng nhận cơ sở đủ điều kiện ATTP do cơ quan quản l&amp;yacute; nh&amp;agrave; nước cấp">
+                                                            <img class="img-certifications-shops" src="https://www.nongsanantoanthanhhoa.vn/image/50/50/Z04LuVoFXYFPLuDqdNDuw3zId7EAsYg2JinKgefK.png" data-toggle="tooltip" data-placement="bottom" data-original-title="<b>Khác </b><hr style='margin:5px;'> C&amp;aacute;c loại chứng nhận, x&amp;aacute;c nhận kh&amp;aacute;c">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="section-seller-overview__item mod-rating mod-rating-cssx">
+                                                    <div class="detail">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">5</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:100%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">12</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">4</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">3</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">2</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">1</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page-menu">
+                                <ul class="nav nav-tabs nav-justified">
+                                    <li class="col-100 active">
+                                       <a href="#tab0" data-toggle="tab">Giới thiệu</a>
+                                    </li>
+                                    <li class="col-100">
+                                       <a href="#tab1" data-toggle="tab" aria-expanded="false">Thông tin chi tiết</a>
+                                    </li>
+                                    <li class="col-100 ">
+                                       <a href="#tab4" data-toggle="tab" aria-expanded="false">Sản phẩm</a>
+                                    </li>
+                                    <li class="col-100">
+                                       <a href="#tab2" data-toggle="tab" aria-expanded="false">Đánh giá</a>
+                                    </li>
+                                    <li class="col-100">
+                                       <a href="#tab3" data-toggle="tab" aria-expanded="false">Hỏi &amp; Đáp</a>
+                                    </li>
+                                    <li class="col-100">
+                                       <a href="#tab5" data-toggle="tab" aria-expanded="false">Địa điểm</a>
+                                    </li>
+                                </ul>
+                                <div class="wrap-content-shop-detail">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab0">
+                                            <div class="pdp-mod-detail">
+                                                <p>
+                                                    Giới thiệu về công ty CP TM & XNK thực phẩm Sao Mai :
+                                                </p>
+                                                <p>
+                                                    Ngày nay, nhu cầu về nguồn thực phẩm sạch và thực phẩm cao cấp ngày càng trở lên cần thiết đối với cuộc sống mỗi người. Cũng chính vì nắm bắt được nhu cầu và tâm huyết của những người trong ngành thực phẩm, tháng 10/2017 công ty CP TM & XNK thực phẩm Sao Mai đã được thành lập với tên thương hiệu là LUXURYFOODS.
+                                                </p>
+                                            </div>
+                                        </div> <!-- end tab -->
+                                        <div class="tab-pane" id="tab1">
+                                            <div class="content pdp-mod-review">
+                                                <div class="organization-info">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-xs-12">
+                                                            <h4 class="col-md-12 col-xs-12">Thông tin Cơ sở kinh doanh</h4>
+                                                            <div style="clear:both; border: none"></div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Tên cơ sở</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    Công ty Cổ phần TM &amp; XNK thực phẩm Sao Mai
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Địa chỉ</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    Lô G36 KP 1 Bình Min, Phường Đông Hương-Thành phố Thanh Hóa-Thanh Hóa
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Điện thoại</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    0989312345_
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Email</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    info@luxuryfoods.vn
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Website</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    http://luxuryfoods.vn
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Người đại diện</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    Nguyễn Thị Mai
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Quy mô</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    Doanh nghiệp vừa
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Trạng thái</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                    Đang hoạt động
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5 col-xs-5">Địa điểm kinh doanh</div>
+                                                                <div class="col-md-7 col-xs-7">
+                                                                 <a target="_blank" style="color:#5aa32a;" href=""> Công ty Cổ phần TM &amp; XNK thực phẩm Sao Mai </a>
+                                                             </div>
+                                                         </div>
+                                                         <div class="row">
+                                                            <div class="col-md-5 col-xs-5">Giấy phép đăng ký</div>
+                                                            <div class="col-md-7 col-xs-7">
+                                                                Số 2802478700Ngày cấp 17/08/2017, đơn vị cấp Tỉnh Thanh Hoá.
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-xs-5">Quản lý về VSATTP bởi</div>
+                                                            <div class="col-md-7 col-xs-7">
+                                                                UBND Phường Đông Hương
+                                                            </div>
+                                                        </div>
+
+                                                        <h4 class="col-md-12 col-xs-12">Chứng nhận, xác nhận của cơ sở</h4>
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-xs-5"><b>Tiêu chuẩn ISO 22000</b><br>Công ty CP TM&amp;XNK Thực Phẩm Sao Mai đã được cấp giấy chứng nhận ISO 22000 về hệ thống quản lý ATTP vào 03/12/2018</div>
+                                                            <div class="col-md-7 col-xs-7 cert-image-product">
+
+                                                               <a href="https://www.nongsanantoanthanhhoa.vn/image/640/600/NapNh3aIMggcaMDem1DM7WISyKR5YXk8HNy6Xsb2.jpeg" class="fancybox">
+                                                                   <img src="https://www.nongsanantoanthanhhoa.vn/image/150/150/NapNh3aIMggcaMDem1DM7WISyKR5YXk8HNy6Xsb2.jpeg">
+                                                               </a>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                                   <div class="col-md-6 col-xs-12">
+                                                   </div>
+                                               </div>
+                                           </div>
+                                         </div>
+                                       </div> <!-- end tab -->
+                                       <div class="tab-pane" id="tab4">
+                                           <div class="content pdp-mod-review">
+                                               <div class="organization-product">
+                                                   <div class="wrap-product product-both">
+                                                       <div class="posts row is-flex">
+                                                         <div class="col-sm-4 col-md-4 col-xs-6">
+                                                            <div class="thumb-product item">
+                                                                <div class="img-item">
+                                                                    <div class="img">
+                                                                        <a href="https://www.nongsanantoanthanhhoa.vn/san-pham/ca-trich-ep-trung" title="">
+                                                                            <img src="https://www.nongsanantoanthanhhoa.vn/image/300/300/mefgsGKyDhGpFAcsLzaHXN2UgIowpwRokpfUY1xp.jpeg" alt="Cá trích ép trứng">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="cer-item">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="wrap-info">
+                                                                    <h3><a href="https://www.nongsanantoanthanhhoa.vn/san-pham/ca-trich-ep-trung">Cá trích ép trứng</a></h3>
+                                                                    <p class="discount">900.000 ₫</p>
+                                                                </div>
+                                                                <div class="container-star" style="width: 100%; padding-left:10px">
+                                                                    <span style="cursor: default;">
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: hidden;"></div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                    
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: hidden;">  
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                                <span class="fa fa-star fa-1x"> 
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: hidden;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                    
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: hidden;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                    
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: hidden;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                                <span class="fa fa-star fa-1x"></span></div>
+                                                                            </div>
+                                                                        </span>
+                                                                        <input type="hidden" data-readonly="" value="5" class="rating rating-tooltip-manual" data-filled="fa fa-star fa-1x" data-empty="fa fa-star-o fa-1x">
+                                                                    <span class="shopping-cart-index">
+                                                                        <a href="javascript:void(0)" onclick="addItemToCart(464,1395)"> <i class="fa fa-shopping-cart"></i></a> 
+                                                                    </span>
+                                                                </div>
+                                                                <div class="shop-info-index">
+                                                                    <div class="shop-info-index-avatar">
+                                                                        <img class="image-avatar-index" src="https://www.nongsanantoanthanhhoa.vn/image/20/20/u2HFPeSzJySYug14REo7UDXgAvaw4YxMfQnLbjB6.png">
+                                                                    </div>
+                                                                    <span class="shop-info-index-text">
+                                                                        <a href="https://www.nongsanantoanthanhhoa.vn/shop/cong-ty-co-phan-tm-xnk-thuc-pham-sao-mai">Công ty Cổ phần TM &amp; XNK thực phẩm Sao Mai</a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                          </div> <!-- end col -->
+                                                          <div class="col-sm-4 col-md-4 col-xs-6">
+                                                            <div class="thumb-product item">
+                                                                <div class="img-item">
+                                                                    <div class="img">
+                                                                        <a href="https://www.nongsanantoanthanhhoa.vn/san-pham/cha-ca-vien-basa" title="">
+                                                                            <img src="https://www.nongsanantoanthanhhoa.vn/image/300/300/Xu0SzeWy2VVavRnmj2H83jfm3rrO0tYjDHtSIdTC.jpeg" alt="Chả cá viên basa">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="cer-item">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="wrap-info">
+                                                                    <h3><a href="https://www.nongsanantoanthanhhoa.vn/san-pham/cha-ca-vien-basa">Chả cá viên basa</a></h3>
+                                                                    <p class="discount">Giá: Liên hệ</p>
+                                                                </div>
+                                                                <div class="container-star" style="width: 100%; padding-left:10px">
+                                                                    <span style="cursor: default;">
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: visible;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0%;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                    
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: visible;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                    
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: visible;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                    
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: visible;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                    
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                            <div class="rating-symbol-background fa fa-star-o fa-1x" style="visibility: visible;">
+                                                                                
+                                                                            </div>
+                                                                            <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: 0px;">
+                                                                                <span class="fa fa-star fa-1x">
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </span>
+                                                                    <input type="hidden" data-readonly="" value="0" class="rating rating-tooltip-manual" data-filled="fa fa-star fa-1x" data-empty="fa fa-star-o fa-1x">
+                                                                    <button type="button" class="send-request" data-id="558">Gửi yêu cầu</button>
+                                                                </div>
+                                                                <div class="shop-info-index">
+                                                                    <div class="shop-info-index-avatar">
+                                                                        <img class="image-avatar-index" src="https://www.nongsanantoanthanhhoa.vn/image/20/20/u2HFPeSzJySYug14REo7UDXgAvaw4YxMfQnLbjB6.png">
+                                                                    </div>
+
+                                                                    <span class="shop-info-index-text">
+                                                                        <a href="https://www.nongsanantoanthanhhoa.vn/shop/cong-ty-co-phan-tm-xnk-thuc-pham-sao-mai">Công ty Cổ phần TM &amp; XNK thực phẩm Sao Mai</a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div> <!-- end col -->
+                                                       </div>
+                                                   </div>
+                                                   <div class="pull-right pagination">
+                                                        <ul class="pagination">
+                                                            <li class="disabled">
+                                                                <span>Trước</span>
+                                                            </li>
+                                                            <li class="active"><span>1</span></li>
+                                                            <li>
+                                                                <a href="https://www.nongsanantoanthanhhoa.vn/shop/cong-ty-co-phan-tm-xnk-thuc-pham-sao-mai?page=2">2</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="https://www.nongsanantoanthanhhoa.vn/shop/cong-ty-co-phan-tm-xnk-thuc-pham-sao-mai?page=2">
+                                                                <span>Tiếp</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                   </div> <!-- end pagination -->
+                                               </div>
+                                           </div>
+                                       </div> <!-- end tab -->
+                                       <div class="tab-pane" id="tab2">
+                                           <div class="content pdp-mod-review">
+                                               <div class="product-rating-overview">
+                                                   <div class="mod-title">
+                                                       <h2 class="pdp-mod-section-title outer-title">
+                                                           Đánh giá và nhận xét của: Công ty Cổ phần TM & XNK thực phẩm Sao Mai
+                                                       </h2>
+                                                   </div>
+                                                   <div class="mod-rating">
+                                                      <div class="summary">
+                                                        <div class="score"><span>5</span> trên 5</div>
+                                                        <div class="average">
+                                                            <div class="container-star " style="width:166.25px;height:30px">
+                                                                <span style="cursor: default;">
+                                                                    <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                        <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: hidden;">
+                                                                            
+                                                                        </div>
+                                                                        <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                            <span class="fa fa-star fa-2x"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                        <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: hidden;"></div>
+                                                                        <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                            <span class="fa fa-star fa-2x"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                        <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: hidden;"></div>
+                                                                        <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                            <span class="fa fa-star fa-2x"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                        <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: hidden;"></div>
+                                                                        <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                            <span class="fa fa-star fa-2x"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                        <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: hidden;"></div>
+                                                                        <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;"><span class="fa fa-star fa-2x"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <input type="hidden" data-readonly="" value="5" class="rating rating-tooltip-manual" data-filled="fa fa-star fa-2x" data-empty="fa fa-star-o fa-2x">
+                                                            </div>
+                                                        </div>
+                                                        <div class="count">12 đánh giá</div>
+                                                     </div>
+                                                     <div class="detail">
+                                                        <ul>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">5</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:100%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">12</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">4</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">3</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">2</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    <span class="star-number">1</span> SAO
+                                                                </span>
+                                                                <span class="progress-wrap">
+                                                                    <div class="pdp-review-progress">
+                                                                        <div class="bar bg"></div>
+                                                                        <div class="bar fg" style="width:0%"></div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="percent">0</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="">
+                                                        <button type="button" class="next-btn next-btn-primary next-btn-medium btn-rate" data-toggle="modal" data-target="#myModal">ĐÁNH GIÁ CƠ SỞ NÀY</button>
+                                                        <div class="modal fade" id="myModal" role="dialog">
+                                                            <div class="modal-dialog">
+                                                              <!-- Modal content-->
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                  <h4 class="modal-title"><i class="fa fa-book"></i> Đánh giá cơ sở sản xuất </h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                  <div class="box-body table-responsive">
+                                                                      <div class="box-body">
+                                                                          <div class="fs-dtrtcmtbox">
+                                                                              <p class="fs-dtrtcmti2">Bạn chấm cơ sở này bao nhiêu sao?</p>
+                                                                              <div class="fs-dtrtbhov">
+                                                                                  <div class="fs-dtrtbig box-star">
+                                                                                      <span style="cursor: default;">
+                                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                                            <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: visible;"></div>
+                                                                                            
+                                                                                        </div> <!-- end 1 sao -->
+                                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                                            <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: visible;"></div>
+                                                                                            
+                                                                                        </div> <!-- end 1 sao -->
+                                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                                            <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: visible;"></div>
+                                                                                            
+                                                                                        </div> <!-- end 1 sao -->
+                                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                                            <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: visible;"></div>
+                                                                                            
+                                                                                        </div> <!-- end 1 sao -->
+                                                                                        <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                                            <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: visible;"></div>
+                                                                                            
+                                                                                        </div> <!-- end 1 sao -->
+                                                                                    </span>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <textarea id="txtNoteRating" name="txtNoteRating" rows="3" class="f-cmttarea fsformsc" placeholder="Vui lòng nhập nhận xét của bạn!"></textarea>
+                                                                              <div class="fs-dtrtbots clearfix"> 
+                                                                                <p>Một đánh giá có ích thường dài từ 100 ký tự trở lên</p> 
+                                                                              </div>
+                                                                         </div>
+                                                                      </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>Hủy</button>
+                                                                    <button id="btn-delete" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-check"></i>Gửi</button>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- end modal -->
+                                                   </div>
+                                               </div>
+                                               <div class="mod-reviews">
+                                                   <div class="item">
+                                                       <div class="top">
+                                                         <span class="container-star starCtn pull-left" style="width:140px;height:16px">
+                                                            <span style="cursor: default;">
+                                                                <div class="rating-symbol" style="display: inline-block; position: relative;">
+                                                                    <div class="rating-symbol-background fa fa-star-o fa-2x" style="visibility: hidden;"></div>
+                                                                    <div class="rating-symbol-foreground" style="display: inline-block; position: absolute; overflow: hidden; left: 0px; right: 0px; width: auto;">
+                                                                        <span class="fa fa-star fa-2x"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <input type="hidden" data-readonly="" value="5" class="rating rating-tooltip-manual" data-filled="fa fa-star fa-2x" data-empty="fa fa-star-o fa-2x">
+                                                         </span>
+                                                         <span class="title left">&nbsp;</span>
+                                                         <span class="pull-right">30/03/2019</span>
+                                                       </div> <!-- end top -->
+                                                       <div class="middle">
+                                                         <span>bởi
+                                                            <a href="">Bùi Khắc Dương</a>
+                                                        </span>
+                                                       </div> <!-- end mid -->
+                                                       <div class="content">Rất rất ngon</div>
+                                                   </div> <!-- end item -->
+                                               </div>
+                                           </div>
+                                       </div> <!-- end tab -->
+                                       <div class="tab-pane" id="tab3">
+                                           <div class="content pdp-mod-review">
+                                               <div class=" product-rating-overview">
+                                                   <div class="mod-title">
+                                                       <h2 class="pdp-mod-section-title outer-title">Hỏi và Đáp của: Công ty Cổ phần TM &amp; XNK thực phẩm Sao Mai</h2>
+                                                   </div>
+                                                   <div class="fs-dtrtcmtbox">
+                                                       <textarea  name="txtNoteQA" rows="3" class="f-cmttarea fsformsc" placeholder="Vui lòng nhập câu hỏi của bạn!"></textarea>
+                                                       <div class="clearfix"></div>
+                                                       <div class="qa-btn-footer">
+                                                           <button id="btn-delete" type="button" class="btn btn-success" >Gửi câu hỏi</button>
+                                                       </div>
+                                                   </div>
+                                                   <div class="mod-reviews">
+                                                       <div class="item">
+                                                            <div class="i-user-question">
+                                                                <img width="50" height="50" src="https://www.nongsanantoanthanhhoa.vn/img/no-avatar.jpg">
+                                                                <strong class="f-cmname">
+                                                                    <a href="https://www.nongsanantoanthanhhoa.vn/user-activity/tuhocall@gmail.com">Hoàng Luật</a>
+                                                                </strong>
+                                                                <span class="f-cmtime">30/03/2019</span>
+                                                            </div>
+                                                            <div class="content f-cmmain">Bên mình có lô cá Hồi mới chưa?</div>
+                                                            <p class="f-cmbott"> <span class="answer-comment">Trả lời</span> </p>
+                                                            <div class="f-cmt-reply">
+                                                                <div class="f-cmt-ask">
+                                                                    <div class="f-cmname">
+                                                                        <img width="50" height="50" src="https://www.nongsanantoanthanhhoa.vn/image/50/50/l3azZ1D3wi0PpmsAYi8evydyioWic7l1dnMvoGTs.png">
+                                                                        <a href="https://www.nongsanantoanthanhhoa.vn/user-activity/info@luxuryfoods.vn">Công ty Cổ phần TM &amp; XNK thực phẩm Sao Mai</a>
+                                                                        <span class="f-cmtime">05/04/2019</span>
+                                                                    </div>
+                                                                    <div class="f-cmmain">Dạ.Cá Hồi bên em mới về anh nhé</div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="commentAnswer169" class="fs-dtrtcmtbox commentAnswer" style="display: none;">
+                                                                <textarea id="txtNoteAnswer169" name="txtNoteAnswer169" rows="3" class="f-cmttarea fsformsc" placeholder="Vui lòng nhập câu trả lời của bạn!"></textarea>
+                                                                <div class="fs-dtrtbots clearfix"> 
+                                                                </div>
+                                                                <div class="qa-btn-footer">
+                                                                    <button id="btn-delete" type="button" class="btn btn-primary" >Gửi câu trả lời</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div> <!-- end tab -->
+                                       <div class="tab-pane" id="tab5">
+                                           <div class="content pdp-mod-review">
+                                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5553365052074!2d105.79735701533197!3d21.010454393777984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca73b308285%3A0xf4ff5c3693337023!2zVHLhuqduIER1eSBIxrBuZywgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1568867331999!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</content> <!-- end content -->
+
+
+<footer>
+    <div class="ft-before">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ft-dl-mobile">
+                    <div class="about-footer">
+                        <div class="footer-logo widget" >
+                            <h3 class="widget-title" >TẢI ỨNG DỤNG DI ĐỘNG </h3>
+                            <span class="img-dl"><img  src="https://www.nongsanantoanthanhhoa.vn/css/images/qrcode-app.png" class="attachment-full size-full" alt="Tải ứng dụng di động phần mềm kết nối cung cầu"></span>
+                            <div class="img-right">
+                                <div class="img-gg">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ketnoicungcau&amp;hl=vi" target="_blank">
+                                        <img width="100" height="20" src="https://www.nongsanantoanthanhhoa.vn/css/images/adr.png" class="attachment-full size-full" alt="Tải ứng dụng trên Google Play"> 
+                                    </a>
+                                </div>
+
+                                <div class="img-ip">
+                                    <a href="https://itunes.apple.com/vn/app//id1454619497?l=vi&amp;mt=8" target="_blank">
+                                        <img width="80" height="20" src="https://www.nongsanantoanthanhhoa.vn/css/images/ios.png" class="attachment-full size-full" alt="Tải ứng dụng trên App Store"> 
+                                    </a>
+                                </div>
+                            </div>    
+                        </div>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnongsanantoanthanhhoa.vn&tabs=272&width=340&height=154&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="154" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row" >
+                        <div class="col-md-4 col-xs-6 widget widget-res">
+                            <h3 class="widget-title">THÔNG TIN</h3>
+                            <ul class="widget-menu">
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/gioi-thieu">Giới thiệu</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/document/quy-che-su-dung-phan-mem.pdf" target="_blank">Quy chế hoạt động</a></li><!-- about/quy-che-hoat-dong -->
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/dieu-khoan-tham-gia">Điều khoản tham gia</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/privacy-policy">Chính sách bảo mật</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/document/tai-lieu-hdsd-nguoi-dung.pdf" target="_blank">Hướng dẫn sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-xs-6  widget widget-res">
+                            <h3 class="widget-title">CƠ QUAN QUẢN LÝ</h3>
+                            <ul class="widget-menu">
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/ubnd-tinh-thanh-hoa">UBND tỉnh Thanh Hóa</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/cac-so-ban-nganh">Sở, ban, ngành</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/ubnd-huyen-thi-tp">UBND huyện, thị, thành phố</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/ubnd-xa-phuong">UBND xã, phường, thị trấn</a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/lien-he">Thông tin liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-xs-6  widget widget-res">
+                            <h3 class="widget-title">THAM GIA CÙNG CHÚNG TÔI</h3>
+                            <ul class="widget-menu">
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/co-so-sxkd">Cơ sở sản xuất, kinh doanh </a></li>
+                                <li class="munu-footer"><a href="https://www.nongsanantoanthanhhoa.vn/about/nguoi-tieu-dung">Người tiêu dùng </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="end-ft">
+    <span>© 2019 Kết nối cung cầu nông sản an toàn Thanh Hóa.</span>| <span class="hotline-ft">02373961818</span>|<span class="email-ft">vpdpattp@thanhhoa.gov.vn</span>
+</div>
+<div class="modal fade in" id="modal-vipham" data-backdrop="static" style="padding-right: 15px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title"><i class="fa fa-flag-checkered"></i> Phản ánh vi phạm </h4>
+            </div>
+            <div class="modal-body">
+                <div class="box-body table-responsive">
+                    <div class="box-body">
+                        <div class="fs-dtrtcmtbox">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="loaiViphamRadios" id="radios1" value="1">
+                                <label class="form-check-label" for="radios1">Thông tin cơ sở không đầy đủ</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="loaiViphamRadios" id="radios2" value="2">
+                                <label class="form-check-label" for="radios2">Đăng các thông tin không chính xác</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="loaiViphamRadios" id="radios3" value="3">
+                                <label class="form-check-label" for="radios3">Thái độ phục vụ không tốt</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="loaiViphamRadios" id="radios4" value="4">
+                                <label class="form-check-label" for="radios4">Có hành vi lừa đảo khách hàng</label>
+                            </div>
+                            <hr>
+                            <textarea id="txtVipham" name="txtVipham" rows="3" class="f-cmttarea fsformsc" placeholder="Vui lòng nhập ý kiến của bạn!"></textarea>
+                            <div class="fs-dtrtbots clearfix"> 
+                                <p>Một ý kiến có ích thường dài từ 100 ký tự trở lên</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>Hủy</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-check"></i>Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<div id="fb-root"></div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/menu_dmsp.js"></script>
+<script src="js/customizer.js"></script>
+<script type="text/javascript" charset="utf-8" async="" defer="">
+    $(".rating-star").mousemove(function() {
+        count = $(this).data('id');
+        $(".rating-star").each(function(){
+            $(this).removeClass('fa-star');
+            $(this).removeClass('fa-star-o');
+            id = $(this).data('id');
+            if(id <= count){
+                $(this).addClass('fa-star');
+            }else $(this).addClass('fa-star-o');
+        });
+    });
+</script>
+</body>
+</html>
