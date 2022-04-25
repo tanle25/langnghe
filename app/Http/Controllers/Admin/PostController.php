@@ -58,7 +58,7 @@ class PostController extends Controller
         if($request->hasFile('image')){
 
             $name_file = time().'_'.$file->getClientOriginalName();
-            $url = $file->move('images', 'upload.jpg');
+            $url = $file->move('images', $name_file );
         }else{
             return redirect()->back();
         }
