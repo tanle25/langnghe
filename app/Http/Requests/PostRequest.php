@@ -31,6 +31,7 @@ class PostRequest extends FormRequest
                 'name'  => 'required',
                 'des_s'  => 'required',
                 'cat_id'  => 'required',
+                'image'=>'mimes:jpeg,jpg,png,gif|required|max:10000'
             ];
         }else{
             return [

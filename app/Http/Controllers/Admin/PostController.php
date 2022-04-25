@@ -49,18 +49,16 @@ class PostController extends Controller
         $arr_data = $request->all();
         $arr_data['created_by'] = \Auth::user()->id;
         $file = $request->image;
-        // $a = getimagesize($file);
-        // $image_type = $a[2];
+        $a = getimagesize($file);
+        $image_type = $a[2];
         $url ="";
 
         $arr_data['slug'] = Str::slug($request->name);
 
         if($request->hasFile('image')){
-            $request->validate([
-                'image'=>'mimes:jpeg,jpg,png,gif|required|max:10000'
-            ]);
+
             $name_file = time().'_'.$file->getClientOriginalName();
-            $url = $file->move('images', $name_file);
+            $url = $file->move('images', 'upload.jpg');
         }else{
             return redirect()->back();
         }
@@ -69,11 +67,10 @@ class PostController extends Controller
         //     $name_file = time().'_'.$file->getClientOriginalName();
         //     $url = $file->move('public/images', $name_file);
         // }else{
+        //     dd('error');
         //     return redirect()->back();
         // }
         $arr_data['image'] = $url;
-        // dd($arr_data);
-        // $arr_data['des_s'] = $request->des_f;
         Post::create($arr_data);
         Session::flash('success-post', 'Tạo mới bài viết thành công.');
         return redirect()->route('post.create');

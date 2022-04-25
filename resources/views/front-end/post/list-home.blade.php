@@ -69,7 +69,7 @@
                                     @if($post->link != null)
                                     <h4 class="media-heading media-heading-cc"> <a href="{{$post->link}}" target="_blank">{{$post->name}}</a></h4>
                                     @else
-                                    <h4 class="media-heading media-heading-cc"> <a href="{{route('post.detail',['slug'=>$post->slug])}}">{{$post->name}}</a></h4>
+                                    <h4 class="media-heading media-heading-cc"> <a href="{{route('post.detail',$post->slug)}}">{{$post->name}}</a></h4>
                                     @endif
                                     </div>
                                 </div>
