@@ -60,7 +60,7 @@ class PostController extends Controller
                 'image'=>'mimes:jpeg,jpg,png,gif|required|max:10000'
             ]);
             $name_file = time().'_'.$file->getClientOriginalName();
-            $url = $file->move('public/images', $name_file);
+            $url = $file->move('images', $name_file);
         }else{
             return redirect()->back();
         }
