@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\PostRequest as PostRequest;
-use Illuminate\Support\Facades\Validator;
+use Session;
 use App\Admin\Post;
 use App\Admin\Category;
-use Session;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
+use App\Http\Requests\PostRequest as PostRequest;
 
 
 class PostController extends Controller
@@ -51,6 +52,8 @@ class PostController extends Controller
         // $a = getimagesize($file);
         // $image_type = $a[2];
         $url ="";
+
+        $arr_data['slug'] = Str::slug($request->name);
 
         if($request->hasFile('image')){
             $request->validate([
