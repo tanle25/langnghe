@@ -26,8 +26,8 @@
 				@endif
 			</td>
 			<td class="text-center">
-				<a href="{{route('post.edit', ['id'=>$obj->id])}}" class="btn btn-warning btn-circle"><i class="fa fa-edit"></i></a>
-				<a 	class="btn btn-danger btn-circle btn-sm delete-button" 
+				<a href="{{route('post.edit', $obj->id)}}" class="btn btn-warning btn-circle"><i class="fa fa-edit"></i></a>
+				<a 	class="btn btn-danger btn-circle btn-sm delete-button"
 					data-action ="{{ route('post.destroy',$obj->id) }}" type="button">
 					<i class="fa fa-trash"></i>
 				</a>
