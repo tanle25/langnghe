@@ -1,4 +1,10 @@
 <?php
+
+use App\Http\Controllers\Admin\ProductController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('delete-shop',[ProductController::class,'deleteProduct']);
+
 Route::get('/register', 'UserController@register')->name('register');
 Route::post('/register', 'UserController@step1')->name('register.post');
 Route::get('/login', 'UserController@login')->name('login.get');

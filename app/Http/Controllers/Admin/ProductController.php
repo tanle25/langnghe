@@ -8,6 +8,7 @@ use App\Http\Requests\ProductRequest as ProductRequest;
 use App\Admin\Product;
 use App\Admin\TypeProduct;
 use App\Shop;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Session;
 
@@ -171,5 +172,27 @@ class ProductController extends Controller
         }
         Session::flash('success-product', 'Update đồng loạt thành công.');
         return redirect()->route('admin-product.index');
+    }
+
+    public function deleteProduct()
+    {
+        # code...
+
+        $allShop = Shop::all();
+
+        $deletedShop = Shop::whereNotIn('id',[2,4,5,6])->get();
+
+        // dd($allShop->count(), $deletedShop->count());
+        $products = $deletedShop->first()->products;
+
+        $product = Product::where('product_code','SP00186')->first();
+
+
+        Storage::disk('images-upload')->delete($product->images);
+
+        // File::delete($product->images);
+
+
+        dd($product);
     }
 }

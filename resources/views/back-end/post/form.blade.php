@@ -2,7 +2,7 @@
 	<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 		<label class="control-label">Tiêu đề bài viết(*)</label>
 		<div class="inner">
-			<input type="text" class="form-control" name="name" id="name" 
+			<input type="text" class="form-control" name="name" id="name"
 			value="{{isset($obj) ? $obj->name : old('name')}}" placeholder="Nhập tiêu đề" required>
 			<input type="hidden" name="_id" id="_id" value="{{isset($obj) ? $obj->id : ''}}">
 		</div>
@@ -10,7 +10,7 @@
 	<div class="form-group {{ $errors->has('slug') ? 'has-error' : '' }}">
 		<label class="control-label">Đường dẫn</label>
 		<div class="inner">
-			<input type="text" class="form-control" name="slug" id="slug" 
+			<input type="text" class="form-control" name="slug" id="slug"
 			value="{{isset($obj) ? $obj->slug : old('slug')}}" placeholder="Đường dẫn">
 		</div>
 	</div>
@@ -31,7 +31,7 @@
 	<div class="form-group {{ $errors->has('link') ? 'has-error' : '' }}">
 		<label class="control-label">Link</label>
 		<div class="inner">
-			<input type="text" class="form-control" name="link" id="link" 
+			<input type="text" class="form-control" name="link" id="link"
 			value="{{isset($obj) ? $obj->link : old('link')}}" placeholder="Nhập link bài viết nếu dẫn tới trang khác">
 		</div>
 	</div>
@@ -49,7 +49,7 @@
 					<img src="" width="300" style="display: none; margin-top: 15px">
 					@endif
 				</div>
-			</div> 
+			</div>
 		</div>
 		<!-- /.box-body -->
 	</div>
@@ -62,7 +62,7 @@
 				@foreach($cats as $p)
 				<option value="{{$p->id}}" {{old('cat_id') == $p->id ? "selected" : ""}}>{{$p->name}}</option>
 				@endforeach
-			</select> 
+			</select>
 			@else
 			<select class="form-control m-b" name="cat_id" id="cat_id" required>
 				<option label=""></option>
@@ -70,7 +70,7 @@
 				<option value="{{$p->id}}" {{$obj->cat_id == $p->id ? "selected" : ""}}>{{$p->name}}</option>
 				@endforeach
 			</select>
-			@endif                                           
+			@endif
 		</div>
 	</div>
 	<div class="form-group">
@@ -80,7 +80,7 @@
 			<select class="form-control m-b" name="status">
 				<option value="1" {{old('status') == "1" ? "selected" : ""}}>Sử dụng</option>
 				<option value="0" {{old('status') == "0" ? "selected" : ""}}>Chưa sử dụng</option>
-			</select> 
+			</select>
 			@else
 			<select class="form-control m-b" name="status">
 				<option value="1" {{$obj->status == "1" ? "selected" : ""}}>Sử dụng</option>

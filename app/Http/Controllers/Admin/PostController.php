@@ -43,19 +43,34 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
+
+        // dd($request->all());
         $arr_data = $request->all();
         $arr_data['created_by'] = \Auth::user()->id;
         $file = $request->image;
-        $a = getimagesize($file);
-        $image_type = $a[2];
-        if(in_array($image_type , array(IMAGETYPE_GIF , IMAGETYPE_JPEG ,IMAGETYPE_PNG , IMAGETYPE_BMP)))
-        {
+        // $a = getimagesize($file);
+        // $image_type = $a[2];
+        $url ="";
+
+        if($request->hasFile('image')){
+            $request->validate([
+                'image'=>'mimes:jpeg,jpg,png,gif|required|max:10000'
+            ]);
             $name_file = time().'_'.$file->getClientOriginalName();
             $url = $file->move('public/images', $name_file);
         }else{
             return redirect()->back();
         }
+        // if(in_array($image_type , array(IMAGETYPE_GIF , IMAGETYPE_JPEG ,IMAGETYPE_PNG , IMAGETYPE_BMP)))
+        // {
+        //     $name_file = time().'_'.$file->getClientOriginalName();
+        //     $url = $file->move('public/images', $name_file);
+        // }else{
+        //     return redirect()->back();
+        // }
         $arr_data['image'] = $url;
+        // dd($arr_data);
+        // $arr_data['des_s'] = $request->des_f;
         Post::create($arr_data);
         Session::flash('success-post', 'Tạo mới bài viết thành công.');
         return redirect()->route('post.create');

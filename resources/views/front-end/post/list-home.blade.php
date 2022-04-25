@@ -24,7 +24,7 @@
                                       <img class="media-object" src="{{$post->image}}" alt="{{$post->name}}">
                                     </a>
                                     <div class="media-body">
-                                    <h4 class="media-heading media-heading-cc"> <a href="{{route('post.detail',['slug'=>$post->slug])}}">{{$post->name}}</a></h4>
+                                    <h4 class="media-heading media-heading-cc"> <a href="{{route('post.detail',$post->slug)}}">{{$post->name}}</a></h4>
                                     </div>
                                 </div>
                                 @endforeach
