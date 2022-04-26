@@ -178,21 +178,17 @@ class ProductController extends Controller
     {
         # code...
 
-        $allShop = Shop::all();
+        // $allShop = Shop::all();
 
-        $deletedShop = Shop::whereNotIn('id',[2,4,5,6])->get();
+        $shopId=[84,88,225];
 
-        // dd($allShop->count(), $deletedShop->count());
-        $products = $deletedShop->first()->products;
+        $deletedShop = Shop::whereNotIn('id',$shopId)->get();
 
-        $product = Product::where('product_code','SP00186')->first();
+        foreach($deletedShop as $shop){
+            $shop->products()->delete();
+            $shop->delete();
+        }
 
-
-        Storage::disk('images-upload')->delete($product->images);
-
-        // File::delete($product->images);
-
-
-        dd($product);
+        // $shop = Shop::find(2);
     }
 }
