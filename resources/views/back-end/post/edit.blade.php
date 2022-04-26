@@ -18,7 +18,7 @@ Thay đổi bài viết
 			</div>
 			<div class="ibox-content">
 				@include('back-end.partials.alert-msg')
-				<form id="form" class="form-horizontal" role="form" action="{{route('post.update',['id'=>$obj->id])}}" 
+				<form id="form" class="form-horizontal" role="form" action="{{route('post.update',$obj->id)}}"
 				enctype="multipart/form-data" method="POST">
 				@method('PATCH')
 				@csrf
@@ -32,7 +32,7 @@ Thay đổi bài viết
 				</form>
 			</div>
 		</div>
-	</div>		
+	</div>
 </div>
 @endsection
 @section('js')
@@ -52,10 +52,10 @@ Thay đổi bài viết
 	});
 	function readURL(input) {
 		if (input.files && input.files[0]) {
-			var reader = new FileReader();			
+			var reader = new FileReader();
 			reader.onload = function(e) {
 				$(input).parent().parent().find('img').attr('src', e.target.result).css('display', 'block');
-			}			
+			}
 			reader.readAsDataURL(input.files[0]); // convert to base64 string
 		}
 	}
