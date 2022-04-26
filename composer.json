@@ -12,6 +12,7 @@
         "browner12/helpers": "^3.4",
         "bumbummen99/shoppingcart": "^2.9",
         "ckeditor/ckeditor": "^4.18",
+        "doctrine/dbal": "^3.3",
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
